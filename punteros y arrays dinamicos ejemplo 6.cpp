@@ -22,6 +22,9 @@ int main() {
     calcularMediana(pNumeros, tam);
     calcularDesviacionRespectoDeLaMediana_DesviacionMedia(pNumeros, tam, media);
     calcularVarianza_DesviacionEstandar(pNumeros, tam, media);
+    
+    delete[] pNumeros;
+    pNumeros = nullptr;
     return 0;
 }
 
